@@ -1,0 +1,29 @@
+#descricao{
+    text-align: center;
+    font-size: larger;
+}
+
+h6{
+    margin-block-end: 1.3em;
+    margin-block-start: 1.75em;
+}
+
+#membros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+
+.foto{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    text-align: center;
+}
+
+.FotoMembro{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+}
