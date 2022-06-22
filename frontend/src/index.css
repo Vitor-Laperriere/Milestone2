@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+    margin-bottom: 60px;
+    margin-top: 30px;
+    padding:  15px 30px 30px 30px;
+    background-color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+}
+
+.product img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.product-info {
+  font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}

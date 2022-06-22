@@ -10,6 +10,9 @@ function HomeScreen(){
         <>
             <ToolBar />
             <BannerHome />
+            <div id="titulo">
+                <h3>COLLECTION LIST</h3>
+            </div>
             <Colecoes />
         </>
     );

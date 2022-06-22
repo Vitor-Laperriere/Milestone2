@@ -1,0 +1,10 @@
+#titulo h3{
+    margin: 0px ;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    color: #000000;
+}
