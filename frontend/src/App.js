@@ -11,6 +11,7 @@ import { useContext } from 'react';
 import { Store } from './Store';
 import {Container} from "react-bootstrap";
 import FootBar from "./components/Components-HomeScreen/FootBar";
+import AboutUs from "./Screen/AboutUs";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/list" element={<List />}/>
                     <Route path="/cart" element={<Cart />}/>
                     <Route path="/login" element={<Login />}/>
+                    <Route path="/about_us" element={<AboutUs />}/>
                 </Routes>
         </main>
       </header>
