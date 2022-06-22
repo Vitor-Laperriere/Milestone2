@@ -10,6 +10,7 @@ import ProductScreen from "./Screen/ProductScreen";
 import { useContext } from 'react';
 import { Store } from './Store';
 import {Container} from "react-bootstrap";
+import FootBar from "./components/Components-HomeScreen/FootBar";
 
 
 function App() {
@@ -30,15 +31,16 @@ function App() {
               </Nav>
       <header >
         <main>
-          <Routes>
-              <Route path="/" element={<HomeScreen />}/>
-              <Route path="/product/:slug" element={<ProductScreen />}/>
-              <Route path="/list" element={<List />}/>
-              <Route path="/cart" element={<Cart />}/>
-             <Route path="/login" element={<Login />}/>
-          </Routes>
+                <Routes>
+                    <Route path="/" element={<HomeScreen />}/>
+                    <Route path="/product/:slug" element={<ProductScreen />}/>
+                    <Route path="/list" element={<List />}/>
+                    <Route path="/cart" element={<Cart />}/>
+                    <Route path="/login" element={<Login />}/>
+                </Routes>
         </main>
       </header>
+        <footer> {<FootBar/>}</footer>
     </div>
   </BrowserRouter>
   );

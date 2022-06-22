@@ -57,7 +57,6 @@ function List(){
                     </Col>
                 ))}
           </Row>
-            <FootBar/>
         </div>
     );
 }

@@ -7,7 +7,6 @@ function Cart(){
     return(
         <>
             <ToolBar />
-            <FootBar/>
         </>
     );
 }

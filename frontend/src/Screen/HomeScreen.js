@@ -14,7 +14,6 @@ function HomeScreen(){
                 <h3>COLLECTION LIST</h3>
             </div>
             <Colecoes />
-            <FootBar/>
         </>
     );
 }
