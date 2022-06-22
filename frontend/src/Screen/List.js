@@ -1,11 +1,13 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import ToolBar from "../components/Components-HomeScreen/ToolBar";
 
 import {useEffect, useReducer} from "react";
 import logger from "use-reducer-logger";
 import axios from "axios";
 import FootBar from "../components/Components-HomeScreen/FootBar";
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Product from "../components/Product";
 
 
 const reducer = (state, action) => {
@@ -20,7 +22,6 @@ const reducer = (state, action) => {
             return state
     }
 }
-
 
 function List(){
     const [{loading, error, products}, dispatch] = useReducer(logger(reducer), {
@@ -42,26 +43,22 @@ function List(){
         }
         fetchData();
     }, []);
+
+
     return(
-        <>
+        loading? <div>Loading...</div>
+            :error? <div>{error}</div> :
+        <div>
             <ToolBar />
-            <div className="products">
-                    {products.map( (product) =>
-                        <div className="product" key={product.slug}>
-                          <Link to={`/product/${product.slug}`}>
-                            <img src={product.image} alt={product.name}/>
-                          </Link>
-                              <div className="product-info">
-                                <Link to={`/product/${product.slug}`}>
-                                  <p> {product.name} </p>
-                                </Link>
-                                <p> {product.price}</p>
-                                <button> Add to cart</button>
-                              </div>
-                        </div>)}
-                </div>
+            <Row>
+                {products.map((product) => (
+                    <Col key={product.slug} sm={6} md={4} lg={3} xxl={5} className="mb-3">
+                        <Product product={product}/>
+                    </Col>
+                ))}
+          </Row>
             <FootBar/>
-        </>
+        </div>
     );
 }
 export default List;
