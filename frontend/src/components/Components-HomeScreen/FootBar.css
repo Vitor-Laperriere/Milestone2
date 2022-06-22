@@ -1,0 +1,27 @@
+#Footer{
+    display:flex;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    align-items: center;
+    text-decoration: None;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.foot-link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 5px 00px 0px 7px;
+    background-color: rgb(255, 255, 255);
+    cursor:pointer;
+    transition: background .3s;
+    border-radius: 6px;
+    margin: 0 50px;
+    font-size: 18px;
+    width: 100px;
+    height: 90px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}

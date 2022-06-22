@@ -5,6 +5,7 @@ import ToolBar from "../components/Components-HomeScreen/ToolBar";
 import {useEffect, useReducer} from "react";
 import logger from "use-reducer-logger";
 import axios from "axios";
+import FootBar from "../components/Components-HomeScreen/FootBar";
 
 
 const reducer = (state, action) => {
@@ -59,6 +60,7 @@ function List(){
                               </div>
                         </div>)}
                 </div>
+            <FootBar/>
         </>
     );
 }
