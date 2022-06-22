@@ -1,0 +1,25 @@
+.colecoes{
+    background-color: #000000;
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+}
+
+.colecoes h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+.colecao{
+    padding:  15px 30px 30px 30px;
+    background-color: #ffffff;
+    cursor:pointer;
+    text-align: center;
+    width: 350px;
+    height: 400px;
+}

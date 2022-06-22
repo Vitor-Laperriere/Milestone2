@@ -4,7 +4,7 @@ function Colecoes(){
     return(
         <>
         <div className="colecoes">
-            <div className="colecao-men">
+            <div className="colecao">
                 <h2>MEN</h2>
                 <img src="./images/man.webp"
                     title="Men Collection"
@@ -13,7 +13,7 @@ function Colecoes(){
                     height="250" />
             </div>
 
-            <div className="colecao-woman">
+            <div className="colecao">
                 <h2>WOMEN</h2>
                 <img src="./images/women.jpg.opdownload"
                     title="Women Collection"
@@ -22,7 +22,7 @@ function Colecoes(){
                     height="250"/>
             </div>
 
-            <div className="colecao-smartwatch">
+            <div className="colecao">
                 <h2>SMARTWATCH</h2>
                 <img src="./images/smart.webp"
                     title="SmartWatch Collection"
