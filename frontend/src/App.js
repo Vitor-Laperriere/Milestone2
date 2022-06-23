@@ -17,6 +17,7 @@ import ShipPoli from "./Screen/ShipPoli";
 import RefundPoli from "./Screen/RefundPoli";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LinkContainer } from 'react-router-bootstrap'
+import ShippingAddressScreen from "./Screen/ShippingAddressScreen";
 
 function App() {const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart, userInfo } = state;
@@ -68,9 +69,10 @@ function App() {const { state, dispatch: ctxDispatch } = useContext(Store);
                     <Route path="/list" element={<List />}/>
                     <Route path="/cart" element={<CartScreen />}/>
                     <Route path="/login" element={<SigninScreen />} />
+                    <Route path="/ShippingAddressScreen" element={<ShippingAddressScreen />}/>
                     <Route path="/about_us" element={<AboutUs />}/>
                     <Route path="/help" element={<Help />}/>
-                    <Route path="/shipping" element={<ShipPoli />}/>
+                    <Route path="/shippingPoli" element={<ShipPoli />}/>
                     <Route path="/refund" element={<RefundPoli />}/>
                     <Route path="/" element={<HomeScreen />}/>
                 </Routes>

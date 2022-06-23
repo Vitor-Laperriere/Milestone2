@@ -9,6 +9,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import ToolBar from '../components/Components-HomeScreen/ToolBar';
 
 export default function CartScreen() {
   const navigate = useNavigate();
@@ -34,12 +35,13 @@ export default function CartScreen() {
   };
 
   const checkoutHandler = () => {
-    navigate('/signin?redirect=/shipping');
+    navigate('/ShippingAddressScreen');
   };
 
 
   return (
     <div>
+      <ToolBar />
       <Helmet>
         <title>Shopping Cart</title>
       </Helmet>
