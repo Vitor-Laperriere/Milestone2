@@ -4,10 +4,6 @@ import './FootBar.css'
 function FootBar(){
     return (
         <div id="Footer">
-            <img src="./images/logoadasdasdasdasdasdasd.png"
-                        alt="JP²V Watches"
-                        width="220"
-                        height="110" />
             <div id="bot_foot">
                 <div class="container">
                     <Link to="/shipping" class="foot-link">SHIPPING POLICY</Link>
