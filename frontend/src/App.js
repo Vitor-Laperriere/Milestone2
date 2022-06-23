@@ -11,6 +11,7 @@ import FootBar from "./components/Components-HomeScreen/FootBar";
 import AboutUs from "./Screen/AboutUs";
 import CartScreen from "./Screen/CartScreen";
 import SigninScreen from './Screen/SigninScreen';
+import Help from "./Screen/Help";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/cart" element={<CartScreen />}/>
                     <Route path="/login" element={<SigninScreen />} />
                     <Route path="/about_us" element={<AboutUs />}/>
+                    <Route path="/help" element={<Help />}/>
                     <Route path="/" element={<HomeScreen />}/>
                 </Routes>
         </main>
