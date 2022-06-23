@@ -2,16 +2,15 @@ import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 
 import HomeScreen from "./Screen/HomeScreen";
 import List from "./Screen/List";
-import Cart from "./Screen/Cart";
 import Badge from 'react-bootstrap/Badge';
 import Nav from 'react-bootstrap/Nav';
-import Login from "./Screen/Login";
 import ProductScreen from "./Screen/ProductScreen";
 import { useContext } from 'react';
 import { Store } from './Store';
-import {Container} from "react-bootstrap";
 import FootBar from "./components/Components-HomeScreen/FootBar";
 import AboutUs from "./Screen/AboutUs";
+import CartScreen from "./Screen/CartScreen";
+import SigninScreen from './Screen/SigninScreen';
 
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
                   Cart
                   {cart.cartItems.length > 0 && (
                     <Badge pill bg="danger">
-                      {cart.cartItems.length}
+                      {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
                     </Badge>
                   )}
                 </Link>
@@ -33,12 +32,12 @@ function App() {
       <header >
         <main>
                 <Routes>
-                    <Route path="/" element={<HomeScreen />}/>
                     <Route path="/product/:slug" element={<ProductScreen />}/>
                     <Route path="/list" element={<List />}/>
-                    <Route path="/cart" element={<Cart />}/>
-                    <Route path="/login" element={<Login />}/>
+                    <Route path="/cart" element={<CartScreen />}/>
+                    <Route path="/login" element={<SigninScreen />} />
                     <Route path="/about_us" element={<AboutUs />}/>
+                    <Route path="/" element={<HomeScreen />}/>
                 </Routes>
         </main>
       </header>

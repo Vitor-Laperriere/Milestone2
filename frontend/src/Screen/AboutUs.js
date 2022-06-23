@@ -11,7 +11,6 @@ function AboutUs(){
         <>
             <ToolBar />
             <Membros />
-            <FootBar/>
         </>
     );
 }
