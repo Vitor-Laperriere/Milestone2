@@ -5,7 +5,7 @@ function FootBar(){
     return (
         <div id="Footer">
             <div id="bot_foot">
-                <div class="container">
+                <div className="container">
                     <Link to="/shipping" className="foot-link">SHIPPING POLICY</Link>
                     <Link to="/refund" className="foot-link">REFUND POLICY</Link>
                     <Link to="/about_us" className="foot-link">ABOUT US</Link>
