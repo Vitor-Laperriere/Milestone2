@@ -68,7 +68,7 @@ function App() {const { state, dispatch: ctxDispatch } = useContext(Store);
                     <Route path="/product/:slug" element={<ProductScreen />}/>
                     <Route path="/list" element={<List />}/>
                     <Route path="/cart" element={<CartScreen />}/>
-                    <Route path="/login" element={<SigninScreen />} />
+                    <Route path="/signin" element={<SigninScreen />} />
                     <Route path="/ShippingAddressScreen" element={<ShippingAddressScreen />}/>
                     <Route path="/about_us" element={<AboutUs />}/>
                     <Route path="/help" element={<Help />}/>
@@ -78,7 +78,7 @@ function App() {const { state, dispatch: ctxDispatch } = useContext(Store);
                 </Routes>
         </main>
       </header>
-        <footer> {<FootBar/>}</footer>
+       
     </div>
   </BrowserRouter>
   );
