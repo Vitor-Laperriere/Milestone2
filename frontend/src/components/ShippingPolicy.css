@@ -1,0 +1,9 @@
+#titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.desc_ship{
+    padding-left: 50px;
+    padding-right: 50px;
+}

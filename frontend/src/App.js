@@ -12,6 +12,7 @@ import AboutUs from "./Screen/AboutUs";
 import CartScreen from "./Screen/CartScreen";
 import SigninScreen from './Screen/SigninScreen';
 import Help from "./Screen/Help";
+import ShipPoli from "./Screen/ShipPoli";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
                     <Route path="/login" element={<SigninScreen />} />
                     <Route path="/about_us" element={<AboutUs />}/>
                     <Route path="/help" element={<Help />}/>
+                    <Route path="/shipping" element={<ShipPoli />}/>
                     <Route path="/" element={<HomeScreen />}/>
                 </Routes>
         </main>
