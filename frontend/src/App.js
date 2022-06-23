@@ -13,6 +13,7 @@ import CartScreen from "./Screen/CartScreen";
 import SigninScreen from './Screen/SigninScreen';
 import Help from "./Screen/Help";
 import ShipPoli from "./Screen/ShipPoli";
+import RefundPoli from "./Screen/RefundPoli";
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
                     <Route path="/about_us" element={<AboutUs />}/>
                     <Route path="/help" element={<Help />}/>
                     <Route path="/shipping" element={<ShipPoli />}/>
+                    <Route path="/refund" element={<RefundPoli />}/>
                     <Route path="/" element={<HomeScreen />}/>
                 </Routes>
         </main>
