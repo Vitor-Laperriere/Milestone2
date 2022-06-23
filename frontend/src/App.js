@@ -72,7 +72,7 @@ function App() {const { state, dispatch: ctxDispatch } = useContext(Store);
                     <Route path="/ShippingAddressScreen" element={<ShippingAddressScreen />}/>
                     <Route path="/about_us" element={<AboutUs />}/>
                     <Route path="/help" element={<Help />}/>
-                    <Route path="/shippingPoli" element={<ShipPoli />}/>
+                    <Route path="/shipping" element={<ShipPoli />}/>
                     <Route path="/refund" element={<RefundPoli />}/>
                     <Route path="/" element={<HomeScreen />}/>
                 </Routes>
