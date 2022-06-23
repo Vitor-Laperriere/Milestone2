@@ -1,7 +1,7 @@
 const data = {
     products: [
       {
-        _id: 1,
+        // _id: 1,
         name: 'DILVAN WATCH',
         slug: 'dilvan-watch',
         category: 'MEN',
@@ -14,7 +14,7 @@ const data = {
         description: 'high quality',
       },
       {
-        _id: 2,
+        // _id: 2,
         name: 'JJONHY WATCH',
         slug: 'jjonhy-watch',
         category: 'MEN',
@@ -27,7 +27,7 @@ const data = {
         description: 'high quality',
       },
       {
-        _id: 3,
+        // _id: 3,
         name: 'PETER WATCH',
         slug: 'peter-watch',
         category: 'WOMEN',
@@ -40,7 +40,7 @@ const data = {
         description: 'high quality product',
       },
       {
-        _id: 4,
+        // _id: 4,
         name: 'YARD WATCH',
         slug: 'yard-watch',
         category: 'MEN',
