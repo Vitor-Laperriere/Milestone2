@@ -6,6 +6,7 @@ import Button from   'react-bootstrap/Button'
 import ToolBar from '../components/Components-HomeScreen/ToolBar';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { Store } from '../Store'
+import CheckoutSteps from '../components/CheckoutSteps';
 
 export default function ShippingAdressScreen() {
     const navigate = useNavigate();
@@ -56,6 +57,8 @@ export default function ShippingAdressScreen() {
         <Helmet>
             <title>Shipping Adress</title>
         </Helmet>
+
+        <CheckoutSteps step1 step2></CheckoutSteps>
         <div className='container small-container'>
 
             <Form onSubmit={submitHandler}>

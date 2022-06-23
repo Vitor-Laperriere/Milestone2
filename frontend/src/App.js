@@ -18,6 +18,7 @@ import RefundPoli from "./Screen/RefundPoli";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LinkContainer } from 'react-router-bootstrap'
 import ShippingAddressScreen from "./Screen/ShippingAddressScreen";
+import SignupScreen from "./Screen/SignupScreen";
 
 function App() {const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart, userInfo } = state;
@@ -25,6 +26,7 @@ function App() {const { state, dispatch: ctxDispatch } = useContext(Store);
   const signoutHandler = () => {
     ctxDispatch({ type: 'USER_SIGNOUT' });
     localStorage.removeItem('userInfo');
+    localStorage.removeItem('shippingAddress');
   };
   return (
     <BrowserRouter>
@@ -69,6 +71,7 @@ function App() {const { state, dispatch: ctxDispatch } = useContext(Store);
                     <Route path="/list" element={<List />}/>
                     <Route path="/cart" element={<CartScreen />}/>
                     <Route path="/signin" element={<SigninScreen />} />
+                    <Route path="/signup" element={<SignupScreen />} />
                     <Route path="/ShippingAddressScreen" element={<ShippingAddressScreen />}/>
                     <Route path="/about_us" element={<AboutUs />}/>
                     <Route path="/help" element={<Help />}/>
