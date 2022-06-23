@@ -1,9 +1,21 @@
-#titulo{
+header{
+    background-color: #013766;
+}
+
+#NomePagina{
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .desc_refund{
     padding-left: 50px;
     padding-right: 50px;
+}
+
+#container{
+    background-color: #013766;
+    font-weight: bold;
+    color: black;
+    opacity: 0.95;  
 }

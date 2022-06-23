@@ -1,5 +1,5 @@
 .colecoes{
-    background-color: #000000;
+    background-color: #013766;
     padding-top: 75px;
     padding-bottom: 75px;
 
@@ -22,4 +22,8 @@
     text-align: center;
     width: 350px;
     height: 400px;
+}
+
+#titulo{
+    background-color: white;
 }

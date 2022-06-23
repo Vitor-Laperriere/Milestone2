@@ -1,5 +1,9 @@
 h4{
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: black;
 }
 
 #forms{
@@ -7,12 +11,15 @@ h4{
     flex-direction: column;
     align-content: space-around;
     flex-wrap: wrap;
+    font-weight: bold;
+    color: black;
 }
 
 #borda{
     border-style: solid;
     border-color: black;
     padding: 40px;
+    background-color: #658da7; 
 }
 
 select{
@@ -29,6 +36,7 @@ select{
     display: flex;
     justify-content: center;
     padding-top: 10px;   
+    padding-bottom: 40px;
 }
 
 button{

@@ -1,11 +1,22 @@
+#aboutus{
+    background-color: #013766;
+    font-weight: bold;
+    color: black;
+    opacity: 0.95;
+}
+
 #descricao{
     text-align: center;
     font-size: larger;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 h6{
     margin-block-end: 1.3em;
     margin-block-start: 1.75em;
+    font-weight: bold;
+    color: black;
 }
 
 #membros{
@@ -13,7 +24,7 @@ h6{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
 }
 
 .foto{
@@ -23,7 +34,7 @@ h6{
 }
 
 .FotoMembro{
-    width: 210px;
-    height: 210px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
 }

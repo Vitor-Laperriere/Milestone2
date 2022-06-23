@@ -7,20 +7,19 @@ function Ajuda(){
                 
             <div id="forms">
                 <div id="borda">
-                Nome: <br></br>
-                <input type="text" name="Nome" /> <br></br>
-                Email para Contato: <br></br>
-                <input type="email" name="Email para Contato" /> <br></br>
-                <select>
-                    <option>Motivo do Contato</option>
-                    <option>Problema com Pagamento</option>
-                    <option>Produto com Defeito</option>
-                    <option>Entrega Atrasada</option>
-                    <option>Outro</option>
-                </select> <br></br>
-                Detalhes do Problema: <br></br>
-                <input type="text" name="Detalhes do Problema" id="problema"/>
-
+                    Nome: <br></br>
+                    <input type="text" name="Nome" /> <br></br>
+                    Email para Contato: <br></br>
+                    <input type="email" name="Email para Contato" /> <br></br>
+                    <select>
+                        <option>Motivo do Contato</option>
+                        <option>Problema com Pagamento</option>
+                        <option>Produto com Defeito</option>
+                        <option>Entrega Atrasada</option>
+                        <option>Outro</option>
+                    </select> <br></br>
+                    Detalhes do Problema: <br></br>
+                    <input type="text" name="Detalhes do Problema" id="problema"/>
                 </div>
             </div>
             

@@ -1,7 +1,7 @@
 #Footer{
     display:flex;
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
+    background-color: #490009;
     align-items: center;
     text-decoration: None;
     flex-wrap: nowrap;
@@ -16,15 +16,20 @@
     font-weight: bold;
     border: none;
     padding: 5px 00px 0px 7px;
-    background-color: rgb(255, 255, 255);
+    background-color: #658da7;
     cursor:pointer;
     transition: background .3s;
     border-radius: 6px;
     margin: 0 50px;
     font-size: 18px;
     width: 100px;
-    height: 90px;
+    height: 70px;
     text-decoration: none;
     color: black;
     text-align: center;
+}
+
+.foot-link:hover{
+    background-color: #013766;
+    color: black;
 }

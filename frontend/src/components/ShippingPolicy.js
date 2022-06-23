@@ -4,7 +4,7 @@ function ShippingPolicy(){
     return(
         <section id="container">
             
-            <div id="titulo">
+            <div id="NomePagina">
                 <h1>Shipping Policy</h1>
             </div> 
 
