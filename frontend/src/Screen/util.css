@@ -1,0 +1,40 @@
+#botao_chekcout{
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+#padrinho{
+    color: white;
+}
+
+.padrao{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.padrao h1{
+    color: white;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.dados{
+}
+
+.small-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    vertical-align: middle;
+}
+
+#setatamanho{
+    height: 75px;
+}
+
+#setabox{
+    width: 80%;
+}

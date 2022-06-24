@@ -3,11 +3,9 @@ import './ShippingPolicy.css'
 function ShippingPolicy(){
     return(
         <section id="container">
-            
             <div id="NomePagina">
                 <h1>Shipping Policy</h1>
-            </div> 
-
+            </div>
             <div className="desc_ship">
                 <h4>DECLARAÇÃO DE ORIGEM</h4>
                 <p>Os produtos vendidos pela JP²V são importados e nacionais, sendo estes nacionais de fabricação própria!<br></br></p>

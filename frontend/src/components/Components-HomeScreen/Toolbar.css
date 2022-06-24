@@ -3,8 +3,8 @@
     align-items: center;
     display:grid;
     flex-wrap: nowrap;
-    justify-content: flex-start;
     padding-bottom: 20px;
+    justify-content: space-evenly;
 }
 
 .container {

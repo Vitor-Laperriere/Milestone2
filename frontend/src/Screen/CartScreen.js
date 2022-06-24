@@ -9,6 +9,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './util.css'
 
 export default function CartScreen() {
   const navigate = useNavigate();
@@ -16,7 +17,6 @@ export default function CartScreen() {
   const {
     cart: { cartItems },
   } = state;
-
 
   const updateCartHandler = async (item, quantity) => {
     const { data } = await axios.get(`/api/products/${item._id}`);
@@ -34,29 +34,30 @@ export default function CartScreen() {
   };
 
   const checkoutHandler = () => {
-    navigate('/ShippingAddressScreen');
+    navigate('/signin?redirect=/shipping');
   };
 
-
   return (
-    <div id="CartCont">
+    <div>
       <Helmet>
         <title>Shopping Cart</title>
       </Helmet>
-      <h1 id="descricao">Shopping Cart</h1>
+      <div className="padrao">
+        <h1 >Shopping Cart</h1>
+      </div>
       <Row>
         <Col md={8}>
           {cartItems.length === 0 ? (
             <MessageBox>
-              Cart is empty. <Link to="/list">Go Shopping</Link>
+              Cart is empty. <Link to="/">Go Shopping</Link>
             </MessageBox>
           ) : (
-            <ListGroup>
+            <ListGroup >
               {cartItems.map((item) => (
                 <ListGroup.Item key={item._id}>
-                  <Row id="align-items-center">
-                    <Col md={4}>
-                      <img
+                  <Row className="align-items-center">
+                    <Col id="setatamanho" md={4}>
+                      <img id="setatamanho"
     src={item.fotinha}
     alt={item.name}
     className="img-fluid rounded img-thumbnail"
@@ -70,7 +71,8 @@ export default function CartScreen() {
                         }
                         variant="light"
                         disabled={item.quantity === 1}
-                      >                        <i className="fas fa-minus-circle"/>
+                      >
+                        <i className="fas fa-minus-circle"/>
                       </Button>{' '}
                       <span>{item.quantity}</span>{' '}
                       <Button
@@ -84,7 +86,7 @@ export default function CartScreen() {
                       </Button>
                     </Col>
                     <Col md={3}>${item.price}</Col>
-                    <Col md={3}>
+                    <Col md={2}>
                       <Button
                         onClick={() => removeItemHandler(item)}
                         variant="light"
@@ -99,11 +101,11 @@ export default function CartScreen() {
           )}
         </Col>
         <Col md={4}>
-          <Card>
-            <Card.Body>
+          <Card id="setabox">
+            <Card.Body >
               <ListGroup variant="flush">
-                <ListGroup.Item>
-                  <h3>
+                <ListGroup.Item >
+                  <h3 class="padrao">
                     Subtotal ({cartItems.reduce((a, c) => a + c.quantity, 0)}{' '}
                     items) : $
                     {cartItems.reduce((a, c) => a + c.price * c.quantity, 0)}
@@ -111,7 +113,7 @@ export default function CartScreen() {
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <div className="d-grid">
-                    <Button
+                    <Button id="botao_chekcout"
                       type="button"
                       variant="primary"
                       onClick={checkoutHandler}
@@ -126,6 +128,7 @@ export default function CartScreen() {
           </Card>
         </Col>
       </Row>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
   );
 }

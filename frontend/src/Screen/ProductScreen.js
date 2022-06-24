@@ -69,8 +69,9 @@ function ProductScreen() {
     <div>Loading...</div>
   ) : error ? (
     <div>{error}</div>
-  ) : (<div>
-              <Row>
+  ) : (
+      <div>
+      <Row>
         <Col md={6}>
           <img
     className="img-large"
@@ -92,7 +93,7 @@ function ProductScreen() {
     numReviews={product.numReviews}
     />
             </ListGroup.Item>
-            <ListGroup.Item>Pirce : ${product.price}</ListGroup.Item>
+            <ListGroup.Item>Price : ${product.price}</ListGroup.Item>
             <ListGroup.Item>
               Description:
               <p>{product.description}</p>
@@ -125,7 +126,9 @@ function ProductScreen() {
                 {product.countInStock > 0 && (
                   <ListGroup.Item>
                     <div className="d-grid">
-                      <Button onClick={addToCartHandler} variant="primary">Add to Cart</Button>
+                      <Button onClick={addToCartHandler} variant="primary">
+                        Add to Cart
+                      </Button>
                     </div>
                   </ListGroup.Item>
                 )}
@@ -133,7 +136,7 @@ function ProductScreen() {
             </Card.Body>
           </Card>
         </Col>
-      </Row>
+      </Row> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
   );
 }
