@@ -17,8 +17,6 @@ import ShippingAddressScreen from "./Screen/ShippingAddressScreen";
 import SignupScreen from "./Screen/SignupScreen";
 import FootBar from "./components/Components-HomeScreen/FootBar";
 import ToolBar from "./components/Components-HomeScreen/ToolBar";
-import PaymentMethodScreen from "./Screen/PaymentMethodScreen";
-import PlaceOrderScreen from "./Screen/PlaceOrderScreen";
 
 function App() {
   return (
@@ -38,8 +36,6 @@ function App() {
                     <Route path="/ShippingAddressScreen" element={<ShippingAddressScreen />}/>
                     <Route path="/about_us" element={<AboutUs />}/>
                     <Route path="/help" element={<Help />}/>
-                    <Route path="/payment" element={<PaymentMethodScreen />}/>
-                    <Route path="/placeorder" element={<PlaceOrderScreen />}/>
                     <Route path="/shipping" element={<ShipPoli />}/>
                     <Route path="/refund" element={<RefundPoli />}/>
                     <Route path="/" element={<HomeScreen />}/>

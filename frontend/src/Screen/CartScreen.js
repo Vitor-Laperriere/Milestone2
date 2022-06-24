@@ -44,7 +44,7 @@ export default function CartScreen() {
       <Helmet>
         <title>Shopping Cart</title>
       </Helmet>
-      <h1 id="descricao">Shopping Cart</h1>
+      <h1>Shopping Cart</h1>
       <Row>
         <Col md={8}>
           {cartItems.length === 0 ? (
@@ -55,7 +55,7 @@ export default function CartScreen() {
             <ListGroup>
               {cartItems.map((item) => (
                 <ListGroup.Item key={item._id}>
-                  <Row id="align-items-center">
+                  <Row className="align-items-center">
                     <Col md={4}>
                       <img
     src={item.fotinha}
