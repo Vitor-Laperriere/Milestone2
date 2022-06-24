@@ -1,5 +1,4 @@
 import React from "react";
-import ToolBar from "../components/Components-HomeScreen/ToolBar";
 
 import {useEffect, useReducer} from "react";
 import logger from "use-reducer-logger";
@@ -38,7 +37,6 @@ function List(){
             }catch (err){
                 dispatch({type: 'FETCH_FAIL', payload: err.message});
             }
-            // setProducts(result.data);
         }
         fetchData();
     }, []);

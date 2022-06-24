@@ -3,8 +3,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Helmet }  from 'react-helmet-async';
 import Form from   'react-bootstrap/Form'
 import Button from   'react-bootstrap/Button'
-import ToolBar from '../components/Components-HomeScreen/ToolBar';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Store } from '../Store'
 import CheckoutSteps from '../components/CheckoutSteps';
 
@@ -57,7 +56,7 @@ export default function ShippingAdressScreen() {
             <title>Shipping Adress</title>
         </Helmet>
 
-        <CheckoutSteps step1 step2></CheckoutSteps>
+        <CheckoutSteps step1 step2/>
         <div id='ShipEnd'>
             <div className='small-container'>
                 <h1 className='my-3'>Shipping Adress</h1>

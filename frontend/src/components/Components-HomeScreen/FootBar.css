@@ -1,7 +1,7 @@
 #Footer{
     display:flex;
     font-family: 'Montserrat', sans-serif;
-    background-color: #490009;
+    background-color: #9a9999;
     align-items: center;
     text-decoration: None;
     flex-wrap: nowrap;
@@ -16,7 +16,7 @@
     font-weight: bold;
     border: none;
     padding: 5px 00px 0px 7px;
-    background-color: #658da7;
+    background-color: #9a9999;
     cursor:pointer;
     transition: background .3s;
     border-radius: 6px;
@@ -30,6 +30,6 @@
 }
 
 .foot-link:hover{
-    background-color: #013766;
+    background-color: #ffffff;
     color: black;
 }

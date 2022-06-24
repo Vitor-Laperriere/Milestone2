@@ -31,7 +31,7 @@
 
 .card{
     align-items: center;
-    background-color: #658da7;
+    background-color: #ffffff;
 }
 
 .list-group{
@@ -39,7 +39,7 @@
 }
 
 .list-group-item{
-    background-color: #658da7;
+    background-color: #ffffff;
 }
 
 .col-md-3{
@@ -76,7 +76,7 @@ a{
 }
 
 .small-container{
-    background-color: #658da7;
+    background-color: #ffffff;
     width: 500px;
     font-weight: bold;
     color: black;
@@ -96,7 +96,7 @@ a{
 
 
 .small-container2{
-    background-color: #658da7;
+    background-color: #ffffff;
     width: 500px;
     height: 460px;
     font-weight: bold;

@@ -1,7 +1,5 @@
-//import React from 'react';
 import { Link } from "react-router-dom";
 import './Toolbar.css'
-import Nav from 'react-bootstrap/Nav';
 import Badge from 'react-bootstrap/Badge';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { LinkContainer } from 'react-router-bootstrap'
@@ -34,23 +32,18 @@ const signoutHandler = () => {
                     </Link>
                     {userInfo ? (
                         <NavDropdown title={userInfo.name} id="basic-nav-dropdown" className="tool-link">
-                        <LinkContainer to="/profile" >
-                        <NavDropdown.Item>User Profile</NavDropdown.Item>
-                        </LinkContainer>
-                        <LinkContainer to="/orderhistory">
-                        <NavDropdown.Item>Order History</NavDropdown.Item>
-                        </LinkContainer>
-                        <NavDropdown.Divider />
-                        <Link  to="#signout"
-                        onClick={signoutHandler}
-                        className="tool-link"><img src="./images/user.png" alt="user"className="ImgBar" width="51" height="51"/>
-                        Sign Out
-                        </Link>
-                    </NavDropdown>
+                            <LinkContainer to="/profile" >
+                                <NavDropdown.Item>User Profile</NavDropdown.Item>
+                            </LinkContainer>
+                            <LinkContainer to="/orderhistory">
+                                <NavDropdown.Item >Order History</NavDropdown.Item>
+                            </LinkContainer>
+                            <NavDropdown.Divider />
+                            <Link  to="#signout" onClick={signoutHandler} className="tool-link">LOGOUT</Link>
+                        </NavDropdown>
                     ) : (
-                    <Link to="/signin"  className="tool-link"><img src="./images/user.png" alt="user"className="ImgBar" width="51" height="51"/>
-                    
-                        Sign In
+                    <Link to="/signin" className="tool-link"><img src="./images/user.png" alt="user"className="ImgBar" width="51" height="51"/>
+                        LOGIN
                     </Link>
                     )}
         
