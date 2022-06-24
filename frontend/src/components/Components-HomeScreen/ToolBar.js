@@ -103,9 +103,9 @@ function ToolBar() {
             LOGIN
           </Link>
         )}
-        <div className="tool-link">
+        <div>
           {userInfo && userInfo.isAdmin && (
-            <NavDropdown title="Admin" id="admin-nav-dropdown">
+            <NavDropdown className="tool-link" title="Admin" id="admin-nav-dropdown">
               <LinkContainer to="/admin/dashboard">
                 <NavDropdown.Item>Dashboard</NavDropdown.Item>
               </LinkContainer>

@@ -31,11 +31,13 @@ export default function PaymentMethodScreen() {
   return (
     <div>
       <CheckoutSteps step1 step2 step3></CheckoutSteps>
-      <div className="container small-container">
+      <div className="small-container">
         <Helmet>
           <title>Payment Method</title>
         </Helmet>
-        <h1 className="my-3">Payment Method</h1>
+        <div class="padrao">
+          <h1 className="my-3">Payment Method</h1>
+        </div>
         <Form onSubmit={submitHandler}>
           <div className="mb-3">
             <Form.Check
@@ -62,6 +64,7 @@ export default function PaymentMethodScreen() {
           </div>
         </Form>
       </div>
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
   );
 }

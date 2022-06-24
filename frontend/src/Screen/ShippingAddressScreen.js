@@ -59,11 +59,12 @@ export default function ShippingAdressScreen() {
         <CheckoutSteps step1 step2/>
         <div id='ShipEnd'>
             <div className='small-container'>
-                <h1 className='my-3'>Shipping Adress</h1>
-
+                <div class="padrao">
+                    <h1 className='my-3'>Shipping Adress</h1>
+                </div>
                 <Form onSubmit={submitHandler}>
                     <Form.Group className='mb-3' controlId='fullName' >
-                        <Form.Label>Full Name</Form.Label>
+                        <Form.Label id="padrinho" >Full Name</Form.Label>
                         <Form.Control
                             value={fullName}
                             onChange={(e) => setFullName(e.target.value)}
@@ -71,7 +72,7 @@ export default function ShippingAdressScreen() {
                         />
                     </Form.Group>
                     <Form.Group className='mb-3' controlId='address' >
-                        <Form.Label>address</Form.Label>
+                        <Form.Label id="padrinho" >Address</Form.Label>
                         <Form.Control
                             value={address}
                             onChange={(e) => setAddress(e.target.value)}
@@ -79,7 +80,7 @@ export default function ShippingAdressScreen() {
                         />
                     </Form.Group>
                     <Form.Group className='mb-3' controlId='city' >
-                        <Form.Label>City</Form.Label>
+                        <Form.Label id="padrinho" >City</Form.Label>
                         <Form.Control
                             value={city}
                             onChange={(e) => setCity(e.target.value)}
@@ -87,7 +88,7 @@ export default function ShippingAdressScreen() {
                         />
                     </Form.Group>
                     <Form.Group className='mb-3' controlId='postalCode' >
-                        <Form.Label>postalCode</Form.Label>
+                        <Form.Label id="padrinho" >PostalCode</Form.Label>
                         <Form.Control
                             value={postalCode}
                             onChange={(e) => setPostalCode(e.target.value)}
@@ -95,7 +96,7 @@ export default function ShippingAdressScreen() {
                         />
                     </Form.Group>
                     <Form.Group className='mb-3' controlId='country' >
-                        <Form.Label>country</Form.Label>
+                        <Form.Label id="padrinho" >Country</Form.Label>
                         <Form.Control
                             value={country}
                             onChange={(e) => setCountry(e.target.value)}
@@ -110,7 +111,7 @@ export default function ShippingAdressScreen() {
                 </Form>
             </div>
         </div>
-
+    <br/><br/><br/><br/><br/>
     </div>
 
 }
