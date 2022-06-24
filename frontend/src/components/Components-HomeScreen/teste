@@ -1,0 +1,23 @@
+<Link to={"/cart"}  className="tool-link"><img src="./images/shopping-cart.png" alt="cart"className="ImgBar" widht="51" height="51"/>
+                    CART
+                    {cart.cartItems.length > 0 && (
+                        <Badge pill bg="danger">
+                        {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
+                        </Badge>
+                    )}
+                    </Link>
+
+                    {userInfo ? (
+                        <NavDropdown title={userInfo.name} id="basic-nav-dropdown" className="tool-link">
+                            <LinkContainer to="/profile" >
+                                <NavDropdown.Item>User Profile</NavDropdown.Item>
+                            </LinkContainer>
+                            <LinkContainer to="/orderhistory">
+                                <NavDropdown.Item >Order History</NavDropdown.Item>
+                            </LinkContainer>
+                            <NavDropdown.Divider />
+                            <Link  to="#signout" onClick={signoutHandler} className="tool-link">LOGOUT</Link>
+                        </NavDropdown>
+                    ) : (
+                    <Link to="/signin" className="tool-link"><img src="./images/user.png" alt="user"className="ImgBar" width="51" height="51"/>
+                        LOGIN

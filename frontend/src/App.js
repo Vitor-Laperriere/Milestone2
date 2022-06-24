@@ -59,7 +59,31 @@ function App() {
                     <Route path="/ShippingAddressScreen" element={<ShippingAddressScreen />}/>
                     <Route path="/payment" element={<PaymentMethodScreen />}></Route>
                     <Route path="/placeorder" element={<PlaceOrderScreen />} />
-                    <Route path="/order/:id" element={<OrderScreen />}></Route>
+                    <Route
+                      path="/order/:id"
+                      element={
+                        <ProtectedRoute>
+                          <OrderScreen />
+                        </ProtectedRoute>
+                      }
+                    ></Route>
+                    <Route
+                      path="/orderhistory"
+                      element={
+                        <ProtectedRoute>
+                          <OrderHistoryScreen />
+                        </ProtectedRoute>
+                      }
+                    ></Route>
+
+                    <Route
+                      path="/admin/dashboard"
+                      element={
+                        <AdminRoute>
+                          <DashboardScreen />
+                        </AdminRoute>
+                      }
+                    ></Route>
                     <Route path="/about_us" element={<AboutUs />}/>
                     <Route path="/help" element={<Help />}/>
                     <Route path="/shipping" element={<ShipPoli />}/>
