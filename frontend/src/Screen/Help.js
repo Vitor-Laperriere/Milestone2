@@ -8,7 +8,6 @@ import Ajuda from "../components/Ajuda";
 function Help(){
     return(
         <>
-            <ToolBar />
             <Ajuda />
         </>
     );

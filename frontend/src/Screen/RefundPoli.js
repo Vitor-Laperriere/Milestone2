@@ -8,7 +8,6 @@ import RefundPolicy from "../components/RefundPolicy";
 function RefundPoli(){
     return(
         <>
-            <ToolBar />
             <RefundPolicy />
         </>
     );

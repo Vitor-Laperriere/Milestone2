@@ -6,7 +6,6 @@ import ShippingPolicy from "../components/ShippingPolicy";
 function ShipPoli(){
     return(
         <>
-            <ToolBar />
             <ShippingPolicy />
         </>
     );

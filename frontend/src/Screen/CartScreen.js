@@ -41,7 +41,6 @@ export default function CartScreen() {
 
   return (
     <div>
-      <ToolBar />
       <Helmet>
         <title>Shopping Cart</title>
       </Helmet>

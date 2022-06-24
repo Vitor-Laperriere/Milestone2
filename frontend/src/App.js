@@ -15,6 +15,8 @@ import RefundPoli from "./Screen/RefundPoli";
 
 import ShippingAddressScreen from "./Screen/ShippingAddressScreen";
 import SignupScreen from "./Screen/SignupScreen";
+import FootBar from "./components/Components-HomeScreen/FootBar";
+import ToolBar from "./components/Components-HomeScreen/ToolBar";
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
         <ToastContainer position="bottom-center" limit={1} />
       
       <header >
+        <ToolBar />
         <main>
                 <Routes>
                     <Route path="/product/:slug" element={<ProductScreen />}/>
@@ -39,6 +42,7 @@ function App() {
                 </Routes>
         </main>
       </header>
+      <FootBar />
        
     </div>
   </BrowserRouter>

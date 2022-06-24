@@ -8,7 +8,6 @@ import Membros from "../components/Membros";
 function AboutUs(){
     return(
         <>
-            <ToolBar />
             <Membros />
         </>
     );

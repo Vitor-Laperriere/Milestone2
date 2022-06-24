@@ -7,7 +7,6 @@ import Colecoes from "../components/Components-HomeScreen/Colecoes";
 function HomeScreen(){
     return(
         <>
-            <ToolBar />
             <BannerHome />
             <div id="titulo">
                 <h3>COLLECTION LIST</h3>

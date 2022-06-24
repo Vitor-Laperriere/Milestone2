@@ -53,7 +53,6 @@ export default function ShippingAdressScreen() {
     }
 
     return <div> 
-        <ToolBar />
         <Helmet>
             <title>Shipping Adress</title>
         </Helmet>
