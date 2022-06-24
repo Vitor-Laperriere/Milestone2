@@ -49,6 +49,7 @@ export default function SignupScreen() {
   }, [navigate, redirect, userInfo]);
 
   return (
+    <div className="dados">
     <Container className="small-container2">
       <Helmet>
         <title>Sign Up</title>
@@ -94,6 +95,9 @@ export default function SignupScreen() {
           <Link to={`/signin?redirect=${redirect}`}>Sign-In</Link>
         </div>
       </Form>
+     
     </Container>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
   );
 }
