@@ -24,6 +24,9 @@ import PaymentMethodScreen from './Screen/PaymentMethodScreen';
 import PlaceOrderScreen from './Screen/PlaceOrderScreen';
 import OrderScreen from './Screen/OrderScreen';
 import OrderHistoryScreen from './Screen/OrderHistoryScreen';
+import UserListScreen from './Screen/UserListScreen';
+import OrderListScreen from './Screen/OrderListScreen';
+import ProductListScreen from './Screen/ProductListScreen';
 
 function App() {
   return (
@@ -84,6 +87,32 @@ function App() {
                         </AdminRoute>
                       }
                     ></Route>
+
+                    <Route
+                      path="/admin/userlist"
+                      element={
+                      <AdminRoute>
+                        <UserListScreen />
+                      </AdminRoute>
+                      }
+                    ></Route>
+
+                     <Route
+                        path="/admin/orderlist"
+                        element={
+                          <AdminRoute>
+                            <OrderListScreen />
+                          </AdminRoute>
+                        }
+                      ></Route>
+                      <Route
+                        path="/admin/products"
+                        element={
+                          <AdminRoute>
+                            <ProductListScreen />
+                          </AdminRoute>
+                        }
+                       ></Route>
                     <Route path="/about_us" element={<AboutUs />}/>
                     <Route path="/help" element={<Help />}/>
                     <Route path="/shipping" element={<ShipPoli />}/>
