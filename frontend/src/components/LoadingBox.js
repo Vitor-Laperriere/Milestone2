@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 import Spinner from 'react-bootstrap/Spinner';
 
 export default function LoadingBox() {
