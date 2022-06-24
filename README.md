@@ -24,13 +24,21 @@ No comments.
 
 ### Test Plan
 Para testar as funcionalidades do site, vamos percorrer um caminho realista entre as páginas, simulando uma compra.
+
 Da página inicial vamos direto para página com os produtos, clicando no botão do header "watches".
+
 Clicamos em algum deles e abrimos a página do produto.
+
 Clicamos em Add To Cart e somos redirecionados ao carrinho.
+
 Clicamos em Proceed To Checkout, como não estamos logados, somos redirecionados para a página de login.
+
 Para criar uma conta, clicamos em Create your account.
+
 Preenchemos todos os dados, clicamos em Sign Up e somos redirecionados para a página Shipping Adress.
+
 Preechemos os dados e clicamos em continue, chegando a página Payment.
+
 Escolhemos o método e finalizamos o pedido.
 
 ### Test Results
