@@ -62,6 +62,10 @@ Abra outro terminal, va para o diretório do Frontend e use:
       
       npm start
       
+Usuario de admin para teste: 
+
+admin@usp.br
+senha: 123456
 
 ### Problems
 No problems.
