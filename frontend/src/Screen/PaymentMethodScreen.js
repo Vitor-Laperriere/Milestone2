@@ -39,7 +39,7 @@ export default function PaymentMethodScreen() {
           <h1 className="my-3">Payment Method</h1>
         </div>
         <Form onSubmit={submitHandler}>
-          <div className="mb-3">
+          <div id="padrinho" className="mb-3">
             <Form.Check
               type="radio"
               id="PayPal"
@@ -49,7 +49,7 @@ export default function PaymentMethodScreen() {
               onChange={(e) => setPaymentMethod(e.target.value)}
             />
           </div>
-          <div className="mb-3">
+          <div id="padrinho" className="mb-3">
             <Form.Check
               type="radio"
               id="Stripe"

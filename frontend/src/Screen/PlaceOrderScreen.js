@@ -84,11 +84,13 @@ export default function PlaceOrderScreen() {
 
   return (
     <div>
-      <CheckoutSteps step1 step2 step3 step4></CheckoutSteps>
+      <CheckoutSteps step1 step2 step3 step4/>
       <Helmet>
         <title>Preview Order</title>
       </Helmet>
-      <h1 className="my-3">Preview Order</h1>
+      <div class="padrao">
+        <h1 className="my-3">Preview Order</h1>
+      </div>
       <Row>
         <Col md={8}>
           <Card className="mb-3">

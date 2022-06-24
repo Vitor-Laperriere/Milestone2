@@ -54,7 +54,9 @@ export default function DashboardScreen() {
 
   return (
     <div>
-      <h1>Dashboard</h1>
+      <div class="padrao">
+        <h1>Dashboard</h1>
+      </div>
       {loading ? (
         <LoadingBox />
       ) : error ? (
@@ -101,7 +103,9 @@ export default function DashboardScreen() {
             </Col>
           </Row>
           <div className="my-3">
-            <h2>Sales</h2>
+            <div className="padrao">
+              <h2>Sales</h2>
+            </div>
             {summary.dailyOrders.length === 0 ? (
               <MessageBox>No Sale</MessageBox>
             ) : (
@@ -118,7 +122,9 @@ export default function DashboardScreen() {
             )}
           </div>
           <div className="my-3">
-            <h2>Categories</h2>
+            <div className="padrao">
+              <h2>Categories</h2>
+            </div>
             {summary.productCategories.length === 0 ? (
               <MessageBox>No Category</MessageBox>
             ) : (

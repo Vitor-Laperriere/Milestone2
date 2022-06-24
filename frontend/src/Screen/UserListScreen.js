@@ -54,13 +54,15 @@ export default function UserListScreen() {
       <Helmet>
         <title>Users</title>
       </Helmet>
-      <h1>Users</h1>
+      <div class="padrao">
+        <h1>Users</h1>
+      </div>
       {loading ? (
         <LoadingBox></LoadingBox>
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
-        <table className="table">
+        <table id="padrinho" className="table">
           <thead>
             <tr>
               <th>ID</th>
