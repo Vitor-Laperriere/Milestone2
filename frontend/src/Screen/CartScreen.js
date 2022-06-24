@@ -39,7 +39,7 @@ export default function CartScreen() {
 
 
   return (
-    <div>
+    <div id="CartCont">
       <Helmet>
         <title>Shopping Cart</title>
       </Helmet>
@@ -84,7 +84,7 @@ export default function CartScreen() {
                       </Button>
                     </Col>
                     <Col md={3}>${item.price}</Col>
-                    <Col md={2}>
+                    <Col md={3}>
                       <Button
                         onClick={() => removeItemHandler(item)}
                         variant="light"

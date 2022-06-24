@@ -64,7 +64,7 @@ function ProductScreen() {
     });
     navigate('/cart');
   };
-
+  
   return loading ? (
     <div>Loading...</div>
   ) : error ? (

@@ -28,7 +28,7 @@ function Product(props) {
     });
   };
 
-
+  
   return (
     <Card>
       <Link to={`/product/${product.slug}`}>

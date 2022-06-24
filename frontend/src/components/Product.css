@@ -31,7 +31,7 @@
 
 .card{
     align-items: center;
-    background-color: #ffffff;
+    background-color: #658da7;
 }
 
 .list-group{
@@ -39,7 +39,7 @@
 }
 
 .list-group-item{
-    background-color: #ffffff;
+    background-color: #658da7;
 }
 
 .col-md-3{
@@ -56,6 +56,16 @@
 
 .col-md-2{
     text-align: center;
+}
+
+.col-md-8{
+    width: 500px;
+
+}
+
+.img-fluid{
+    width: 130px;
+    height: 130px;
 }
 
 a{
@@ -76,7 +86,7 @@ a{
 }
 
 .small-container{
-    background-color: #ffffff;
+    background-color: #658da7;
     width: 500px;
     font-weight: bold;
     color: black;
@@ -96,7 +106,7 @@ a{
 
 
 .small-container2{
-    background-color: #ffffff;
+    background-color: #658da7;
     width: 500px;
     height: 460px;
     font-weight: bold;
@@ -121,4 +131,12 @@ a{
 #ShipEnd{
     display: flex;
     justify-content: center;
+}
+
+.container{
+    display: flex;
+}
+
+#CartCont{
+    padding-bottom: 100px;
 }
