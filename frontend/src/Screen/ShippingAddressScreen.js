@@ -52,13 +52,16 @@ export default function ShippingAdressScreen() {
         navigate('/payment');
     }
 
-    return <div> 
+    return (
+        <div > 
+
         <Helmet>
             <title>Shipping Adress</title>
         </Helmet>
 
         <CheckoutSteps step1 step2></CheckoutSteps>
-        <div className='container small-container'>
+        <div className='small-container'>
+            <h1 className='my-3'>Shipping Adress</h1>
 
             <Form onSubmit={submitHandler}>
                 <Form.Group className='mb-3' controlId='fullName' >
@@ -109,7 +112,7 @@ export default function ShippingAdressScreen() {
 
             </Form>
         </div>
-        <h1 className='my-3'>Shipping Adress</h1>
     </div>
+    )
   
 }

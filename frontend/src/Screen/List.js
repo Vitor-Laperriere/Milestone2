@@ -48,6 +48,7 @@ function List(){
         loading? <div>Loading...</div>
             :error? <div>{error}</div> :
         <div>
+       
             <Row>
                 {products.map((product) => (
                     <Col key={product.slug} sm={6} md={4} lg={3} xxl={5} className="mb-3">
