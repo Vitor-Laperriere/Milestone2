@@ -51,6 +51,11 @@ Após clonar o repositório, mude o diretório para a pasta do Backend e use os 
 
       node server.js (Considerando que o node ja está instalado)
       
+Crie uma pasta chamada .env e adicione:
+
+JWT_SECRET=segredinho
+MONGODB_URI=mongodb+srv://jjonhy:123coxinha@cluster0.tyj9ulu.mongodb.net/jjonhy?retryWrites=true&w=majority
+
 Abra outro terminal, va para o diretório do Frontend e use:
 
       npm install
