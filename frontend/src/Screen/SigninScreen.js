@@ -46,7 +46,7 @@ export default function SigninScreen() {
 
 
   return (
-    <div>
+    <div className="dados">
       <div className="small-container">
         <Helmet>
           <title>Sign In</title>
@@ -68,10 +68,10 @@ export default function SigninScreen() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </Form.Group>
-          <div className="mb-3">
-            <Button type="submit">Sign In</Button>
+          <div className="mb-6">
+            <Button type="subit">Sign In</Button>
           </div>
-          <div className="mb-3">
+          <div className="mb-6">
             New customer?{' '}
             <Link to={`/signup?redirect=${redirect}`}>Create your account</Link>
           </div>

@@ -44,19 +44,21 @@ function List(){
     }, []);
 
 
+
     return(
         loading? <div>Loading...</div>
             :error? <div>{error}</div> :
-        <div>
        
             <Row>
+                <div style={{display: "flex", flexDirection: "row", flexWrap: "wrap"}}>
                 {products.map((product) => (
-                    <Col key={product.slug} sm={6} md={4} lg={3} xxl={5} className="mb-3">
+                    <Col key={product.slug} sm={6} md={4} lg={3} xxl={5} className="mb-2">
                         <Product product={product}/>
                     </Col>
                 ))}
+                </div>
           </Row>
-        </div>
+       
     );
 }
 export default List;
