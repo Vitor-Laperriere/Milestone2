@@ -47,7 +47,7 @@ export default function SigninScreen() {
 
   return (
     <div>
-      <Container className="small-container">
+      <div className="small-container">
         <Helmet>
           <title>Sign In</title>
         </Helmet>
@@ -76,8 +76,7 @@ export default function SigninScreen() {
             <Link to={`/signup?redirect=${redirect}`}>Create your account</Link>
           </div>
         </Form>
-      </Container>
-     
+      </div>
     </div>
   );
 }

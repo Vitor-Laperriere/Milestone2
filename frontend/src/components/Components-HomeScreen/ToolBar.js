@@ -33,8 +33,8 @@ const signoutHandler = () => {
                     )}
                     </Link>
                     {userInfo ? (
-                        <NavDropdown title={userInfo.name} id="basic-nav-dropdown">
-                        <LinkContainer to="/profile">
+                        <NavDropdown title={userInfo.name} id="basic-nav-dropdown" className="tool-link">
+                        <LinkContainer to="/profile" >
                         <NavDropdown.Item>User Profile</NavDropdown.Item>
                         </LinkContainer>
                         <LinkContainer to="/orderhistory">
