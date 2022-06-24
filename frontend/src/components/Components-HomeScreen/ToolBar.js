@@ -23,9 +23,7 @@ const signoutHandler = () => {
                 <Link to="/"><img src="./images/logoadasdasdasdasdasdasd.png" title="Logotipo" alt="logo_tropical" className="logotipo"/></Link>
                 <Link to={"/"} className="tool-link"><img src="./images/home.png" alt="home"className="ImgBar" width="51" height="51"/><p className="ImgBar">HOME</p></Link>
                 <Link to={"/list"} className="tool-link"><img src="./images/hand-watch.png" alt="hand watch"className="ImgBar" width="52" height="51"/><p>WATCHES</p></Link>
-
-              
-                    <Link to={"/cart"}  className="tool-link"><img src="./images/shopping-cart.png" alt="cart"className="ImgBar" widht="51" height="51"/>
+                <Link to={"/cart"}  className="tool-link"><img src="./images/shopping-cart.png" alt="cart"className="ImgBar" widht="51" height="51"/>
                     CART
                     {cart.cartItems.length > 0 && (
                         <Badge pill bg="danger">
@@ -45,17 +43,13 @@ const signoutHandler = () => {
                         <Link  to="#signout"
                         onClick={signoutHandler}
                         className="tool-link"><img src="./images/user.png" alt="user"className="ImgBar" width="51" height="51"/>
-                        Sign Out
+                        LOGOUT
                         </Link>
                     </NavDropdown>
                     ) : (
-                    <Link to="/signin"  className="tool-link"><img src="./images/user.png" alt="user"className="ImgBar" width="51" height="51"/>
-                    
-                        Sign In
+                    <Link to="/signin"  className="tool-link"><img src="./images/user.png" alt="user"className="ImgBar" width="51" height="51"/>LOGIN
                     </Link>
                     )}
-        
-                
             </div>
         </div>
         );

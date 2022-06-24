@@ -24,10 +24,9 @@ function App() {
     <BrowserRouter>
     <div className="d-flex flex-column site-container">
         <ToastContainer position="bottom-center" limit={1} />
-      
-      <header >
-        <ToolBar />
-        <main>
+        <header >
+            <ToolBar/> <br/><br/>
+            <main>
                 <Routes>
                     <Route path="/product/:slug" element={<ProductScreen />}/>
                     <Route path="/list" element={<List />}/>
@@ -42,10 +41,9 @@ function App() {
                     <Route path="/refund" element={<RefundPoli />}/>
                     <Route path="/" element={<HomeScreen />}/>
                 </Routes>
-        </main>
-      </header>
-      <FootBar />
-       
+            </main>
+        </header>
+        <FootBar />
     </div>
   </BrowserRouter>
   );
