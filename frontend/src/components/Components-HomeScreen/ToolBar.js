@@ -6,6 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 import { useContext } from 'react';
 import { Store } from "../../Store";
 
+
 function ToolBar(){const { state, dispatch: ctxDispatch } = useContext(Store);
 const { cart, userInfo } = state;
 
@@ -13,6 +14,8 @@ const signoutHandler = () => {
   ctxDispatch({ type: 'USER_SIGNOUT' });
   localStorage.removeItem('userInfo');
   localStorage.removeItem('shippingAddress');
+  window.location.href = '/signin';
+  localStorage.removeItem('paymentMethod');
 };
     return (
         <div className="tool-bar">
@@ -30,6 +33,7 @@ const signoutHandler = () => {
                         </Badge>
                     )}
                     </Link>
+
                     {userInfo ? (
                         <NavDropdown title={userInfo.name} id="basic-nav-dropdown" className="tool-link">
                             <LinkContainer to="/profile" >
@@ -46,7 +50,22 @@ const signoutHandler = () => {
                         LOGIN
                     </Link>
                     )}
-        
+                    {userInfo && userInfo.isAdmin &&(
+                        <NavDropdown title="Admin" id="admin-nav-dropdown" >
+                            <LinkContainer>
+                            <NavDropdown.Item>Dashboard</NavDropdown.Item>
+                            </LinkContainer>
+                            <LinkContainer to="/productlist" className="tool-link">
+                            <NavDropdown.Item>Products</NavDropdown.Item>
+                            </LinkContainer>
+                            <LinkContainer to="/orderlist" className="tool-link">
+                            <NavDropdown.Item>Orders</NavDropdown.Item>
+                            </LinkContainer>
+                            <LinkContainer to="/userlist" className="tool-link">
+                            <NavDropdown.Item>Users</NavDropdown.Item>
+                            </LinkContainer>
+                        </NavDropdown>
+                    )}
                 
             </div>
         </div>
