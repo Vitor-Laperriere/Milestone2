@@ -75,7 +75,7 @@ function ProductScreen() {
         <Col md={6}>
           <img
     className="img-large"
-    src={product.fotinha}
+    src={"../" + product.fotinha}
     alt={product.name}
     />
         </Col>
