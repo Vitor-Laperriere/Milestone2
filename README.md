@@ -47,7 +47,7 @@ O teste ocorreu como o esperado.
 ### Build Procedures
 Após clonar o repositório, mude o diretório para a pasta do Backend e use os seguintes comandos:
 
-      npm install
+      npm install --force
 
       node server.js (Considerando que o node ja está instalado)
       
@@ -58,13 +58,13 @@ MONGODB_URI=mongodb+srv://jjonhy:123coxinha@cluster0.tyj9ulu.mongodb.net/jjonhy?
 
 Abra outro terminal, va para o diretório do Frontend e use:
 
-      npm install
+      npm install --force
       
       npm start
       
 Usuario de admin para teste: 
 
-admin@usp.br
+admin@usp.com
 senha: 123456
 
 ### Problems
