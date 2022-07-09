@@ -114,7 +114,7 @@ export default function OrderScreen() {
                     <Row className="align-items-center">
                       <Col md={6}>
                         <img
-                          src={item.fotinha}
+                          src={"../" + item.fotinha}
                           alt={item.name}
                           className="img-fluid rounded img-thumbnail"
                         ></img>{' '}
@@ -123,6 +123,7 @@ export default function OrderScreen() {
                       <Col md={3}>
                         <span>{item.quantity}</span>
                       </Col>
+                    
                       <Col md={3}>${item.price}</Col>
                     </Row>
                   </ListGroup.Item>

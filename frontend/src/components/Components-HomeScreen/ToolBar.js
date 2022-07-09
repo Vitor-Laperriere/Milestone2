@@ -22,7 +22,7 @@ function ToolBar() {
   return (
     <div className="tool-bar">
       <div className="container">
-        <Link to="/">
+        <Link to="/" >
           <img
             src="./images/logoadasdasdasdasdasdasd.png"
             title="Logotipo"
@@ -30,16 +30,7 @@ function ToolBar() {
             className="logotipo"
           />
         </Link>
-        <Link to={'/'} className="tool-link">
-          <img
-            src="./images/home.png"
-            alt="home"
-            className="ImgBar"
-            width="51"
-            height="51"
-          />
-          <p className="ImgBar">HOME</p>
-        </Link>
+       
         <Link to={'/list'} className="tool-link">
           <img
             src="./images/hand-watch.png"
@@ -109,13 +100,13 @@ function ToolBar() {
               <LinkContainer to="/admin/dashboard">
                 <NavDropdown.Item>Dashboard</NavDropdown.Item>
               </LinkContainer>
-              <LinkContainer to="/admin/productlist">
+              <LinkContainer to="/admin/products">
                 <NavDropdown.Item>Products</NavDropdown.Item>
               </LinkContainer>
-              <LinkContainer to="/admin/orderlist">
+              <LinkContainer to="/admin/orders">
                 <NavDropdown.Item>Orders</NavDropdown.Item>
               </LinkContainer>
-              <LinkContainer to="/admin/userlist">
+              <LinkContainer to="/admin/users">
                 <NavDropdown.Item>Users</NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>
