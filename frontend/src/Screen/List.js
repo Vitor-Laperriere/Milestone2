@@ -50,7 +50,7 @@ function List(){
 
              <div>
       <Helmet>
-        <title>Amazona</title>
+        <title>JP²V</title>
       </Helmet>
                  <div class="padrao">
                      <h1>Featured Products</h1>
