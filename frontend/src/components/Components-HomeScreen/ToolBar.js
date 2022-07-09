@@ -22,7 +22,7 @@ function ToolBar() {
   return (
     <div className="tool-bar">
       <div className="container">
-        <Link to="/" >
+        <Link to="/">
           <img
             src="./images/logoadasdasdasdasdasdasd.png"
             title="Logotipo"
@@ -30,7 +30,7 @@ function ToolBar() {
             className="logotipo"
           />
         </Link>
-       
+
         <Link to={'/list'} className="tool-link">
           <img
             src="./images/hand-watch.png"
@@ -50,7 +50,7 @@ function ToolBar() {
             widht="51"
             height="51"
           />
-          CART
+          {'\n'}CART
           {cart.cartItems.length > 0 && (
             <Badge pill bg="danger">
               {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
@@ -70,16 +70,16 @@ function ToolBar() {
               <NavDropdown.Item>Order History</NavDropdown.Item>
             </LinkContainer>
             <NavDropdown.Divider />
+
             <Link to="#signout" onClick={signoutHandler} className="tool-link">
               <img
                 src="./images/user.png"
                 alt="user"
                 className="ImgBar"
-                width="31"
-                height="31"
+                width="38"
+                height="38"
               />
-              <br></br>
-              Sign Out
+              <p>Sign Out</p>
             </Link>
           </NavDropdown>
         ) : (
@@ -96,7 +96,11 @@ function ToolBar() {
         )}
         <div>
           {userInfo && userInfo.isAdmin && (
-            <NavDropdown className="tool-link" title="Admin" id="admin-nav-dropdown">
+            <NavDropdown
+              className="tool-link"
+              title="Admin"
+              id="admin-nav-dropdown"
+            >
               <LinkContainer to="/admin/dashboard">
                 <NavDropdown.Item>Dashboard</NavDropdown.Item>
               </LinkContainer>

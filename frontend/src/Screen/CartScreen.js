@@ -9,7 +9,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './util.css'
+import './util.css';
 
 export default function CartScreen() {
   const navigate = useNavigate();
@@ -43,25 +43,26 @@ export default function CartScreen() {
         <title>Shopping Cart</title>
       </Helmet>
       <div className="padrao">
-        <h1 >Shopping Cart</h1>
+        <h1>Shopping Cart</h1>
       </div>
       <Row>
         <Col md={8}>
           {cartItems.length === 0 ? (
-            <MessageBox>
-              Cart is empty. <Link to="/">Go Shopping</Link>
+            <MessageBox >
+              Cart is empty. <Link to="/list"><br />Go Shopping</Link >
             </MessageBox>
           ) : (
-            <ListGroup >
+            <ListGroup>
               {cartItems.map((item) => (
                 <ListGroup.Item key={item._id}>
                   <Row className="align-items-center">
                     <Col id="setatamanho" md={4}>
-                      <img id="setatamanho"
-    src={item.fotinha}
-    alt={item.name}
-    className="img-fluid rounded img-thumbnail"
-    />{' '}
+                      <img
+                        id="setatamanho"
+                        src={item.fotinha}
+                        alt={item.name}
+                        className="img-fluid rounded img-thumbnail"
+                      />{' '}
                       <Link to={`/product/${item.slug}`}>{item.name}</Link>
                     </Col>
                     <Col md={3}>
@@ -72,7 +73,7 @@ export default function CartScreen() {
                         variant="light"
                         disabled={item.quantity === 1}
                       >
-                        <i className="fas fa-minus-circle"/>
+                        <i className="fas fa-minus-circle" />
                       </Button>{' '}
                       <span>{item.quantity}</span>{' '}
                       <Button
@@ -82,7 +83,7 @@ export default function CartScreen() {
                         }
                         disabled={item.quantity === item.countInStock}
                       >
-                        <i className="fas fa-plus-circle"/>
+                        <i className="fas fa-plus-circle" />
                       </Button>
                     </Col>
                     <Col md={3}>${item.price}</Col>
@@ -91,7 +92,7 @@ export default function CartScreen() {
                         onClick={() => removeItemHandler(item)}
                         variant="light"
                       >
-                        <i className="fas fa-trash"/>
+                        <i className="fas fa-trash" />
                       </Button>
                     </Col>
                   </Row>
@@ -102,9 +103,9 @@ export default function CartScreen() {
         </Col>
         <Col md={4}>
           <Card id="setabox">
-            <Card.Body >
+            <Card.Body>
               <ListGroup variant="flush">
-                <ListGroup.Item >
+                <ListGroup.Item>
                   <h3 class="padrao">
                     Subtotal ({cartItems.reduce((a, c) => a + c.quantity, 0)}{' '}
                     items) : $
@@ -113,7 +114,8 @@ export default function CartScreen() {
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <div className="d-grid">
-                    <Button id="botao_chekcout"
+                    <Button
+                      id="botao_chekcout"
                       type="button"
                       variant="primary"
                       onClick={checkoutHandler}
@@ -128,7 +130,24 @@ export default function CartScreen() {
           </Card>
         </Col>
       </Row>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

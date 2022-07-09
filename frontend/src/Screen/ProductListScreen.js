@@ -9,7 +9,6 @@ import { Store } from '../Store';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { getError } from './utils';
-
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':
@@ -24,7 +23,6 @@ const reducer = (state, action) => {
       };
     case 'FETCH_FAIL':
       return { ...state, loading: false, error: action.payload };
-    
     case 'CREATE_REQUEST':
       return { ...state, loadingCreate: true };
     case 'CREATE_SUCCESS':
@@ -34,40 +32,33 @@ const reducer = (state, action) => {
       };
     case 'CREATE_FAIL':
       return { ...state, loadingCreate: false };
-
     default:
       return state;
   }
 };
-
 export default function ProductListScreen() {
   const [{ loading, error, products, pages, loadingCreate }, dispatch] =
-  useReducer(reducer, {
-    loading: true,
-    error: '',
-  });
-
+    useReducer(reducer, {
+      loading: true,
+      error: '',
+    });
   const navigate = useNavigate();
   const { search } = useLocation();
   const sp = new URLSearchParams(search);
-  const page = sp.get('page') || 1;
-
+  const page = sp.get('page') || 0;
   const { state } = useContext(Store);
   const { userInfo } = state;
-
   useEffect(() => {
     const fetchData = async () => {
       try {
         const { data } = await axios.get(`/api/products/admin?page=${page} `, {
           headers: { Authorization: `Bearer ${userInfo.token}` },
         });
-
         dispatch({ type: 'FETCH_SUCCESS', payload: data });
       } catch (err) {}
     };
     fetchData();
   }, [page, userInfo]);
-
   const createHandler = async () => {
     if (window.confirm('Are you sure to create?')) {
       try {
@@ -90,10 +81,9 @@ export default function ProductListScreen() {
       }
     }
   };
-
   return (
     <div>
-     <Row>
+      <Row>
         <Col>
           <h1>Products</h1>
         </Col>
@@ -105,7 +95,6 @@ export default function ProductListScreen() {
           </div>
         </Col>
       </Row>
-
       {loadingCreate && <LoadingBox></LoadingBox>}
       {loading ? (
         <LoadingBox></LoadingBox>
@@ -142,7 +131,6 @@ export default function ProductListScreen() {
                     </Button>
                   </td>
                 </tr>
-
               ))}
             </tbody>
           </table>
