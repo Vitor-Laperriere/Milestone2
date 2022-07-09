@@ -40,16 +40,16 @@ export default function CartScreen() {
   return (
     <div>
       <Helmet>
-        <title>Shopping Cart</title>
+        <title>Carrinho</title>
       </Helmet>
       <div className="padrao">
-        <h1>Shopping Cart</h1>
+        <h1>Carrinho</h1>
       </div>
       <Row>
         <Col md={8}>
           {cartItems.length === 0 ? (
             <MessageBox >
-              Cart is empty. <Link to="/list"><br />Go Shopping</Link >
+              Carrinho vazio. <Link to="/list"><br />Escolha um produto</Link >
             </MessageBox>
           ) : (
             <ListGroup>
@@ -107,7 +107,7 @@ export default function CartScreen() {
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <h3 class="padrao">
-                    Subtotal ({cartItems.reduce((a, c) => a + c.quantity, 0)}{' '}
+                    Sub total ({cartItems.reduce((a, c) => a + c.quantity, 0)}{' '}
                     items) : $
                     {cartItems.reduce((a, c) => a + c.price * c.quantity, 0)}
                   </h3>
@@ -121,7 +121,7 @@ export default function CartScreen() {
                       onClick={checkoutHandler}
                       disabled={cartItems.length === 0}
                     >
-                      Proceed to Checkout
+                      Finalizar pedido
                     </Button>
                   </div>
                 </ListGroup.Item>

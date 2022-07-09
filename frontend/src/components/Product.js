@@ -6,6 +6,7 @@ import { useContext } from 'react';
 import { Store } from '../Store';
 import './Product.css'
 
+
 function Product(props) {
   const { product } = props;
 

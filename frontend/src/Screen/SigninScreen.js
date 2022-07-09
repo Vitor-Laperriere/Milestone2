@@ -47,10 +47,10 @@ export default function SigninScreen() {
     <div className="dados">
       <div className="small-container">
         <Helmet>
-          <title>Sign In</title>
+          <title>Entrar</title>
         </Helmet>
         <div class="padrao">
-          <h1 className="my-3">Sign In</h1>
+          <h1 className="my-3">Entrar</h1>
         </div>
         <Form onSubmit={submitHandler}>
           <Form.Group className="mb-3" controlId="email" >
@@ -61,7 +61,7 @@ export default function SigninScreen() {
               onChange={(e) => setEmail(e.target.value)}
             />        </Form.Group>
           <Form.Group  className="mb-3" controlId="password">
-            <Form.Label id="padrinho">Password</Form.Label>
+            <Form.Label id="padrinho">Senha</Form.Label>
             <Form.Control
               type="password"
               required
@@ -69,11 +69,11 @@ export default function SigninScreen() {
             />
           </Form.Group>
           <div className="mb-6">
-            <Button type="subit">Sign In</Button>
+            <Button type="subit">Entrar</Button>
           </div>
           <div className="mb-6" id="padrinho">
-            New customer?{' '}
-            <Link to={`/signup?redirect=${redirect}`} > Create your account</Link>
+            Cliente novo?{' '}
+            <Link to={`/signup?redirect=${redirect}`} > Crie uma conta</Link>
           </div>
         </Form>
       </div>

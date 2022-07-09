@@ -52,12 +52,12 @@ export default function SignupScreen() {
     <div className="dados">
     <Container className="small-container2">
       <Helmet>
-        <title>Sign Up</title>
+        <title>Registrar</title>
       </Helmet>
-      <h1 className="my-3">Sign Up</h1>
+      <h1 className="my-3">Registrar</h1>
       <Form onSubmit={submitHandler}>
         <Form.Group className="mb-3" controlId="name">
-          <Form.Label>Name</Form.Label>
+          <Form.Label>Nome</Form.Label>
           <Form.Control onChange={(e) => setName(e.target.value)} required />
         </Form.Group>
 
@@ -71,7 +71,7 @@ export default function SignupScreen() {
         </Form.Group>
                 <Form.Group className="mb-5" controlId="password">
           <Form.Group className="mb-3" controlId="password">
-            <Form.Label>Password</Form.Label>
+            <Form.Label>Senha</Form.Label>
             <Form.Control
               type="password"
               required
@@ -79,7 +79,7 @@ export default function SignupScreen() {
             />
             </Form.Group>
           <Form.Group className="mb-3" controlId="confirmPassword">
-            <Form.Label>Confirm Password</Form.Label>
+            <Form.Label>Confirmar senha</Form.Label>
             <Form.Control
               type="password"
               onChange={(e) => setConfirmPassword(e.target.value)}
@@ -88,11 +88,11 @@ export default function SignupScreen() {
           </Form.Group>
         </Form.Group>
         <div className="mb-6">
-          <Button type="submit">Sign Up</Button>
+          <Button type="submit">Registrar</Button>
         </div>
         <div className="mb-6">
-          Already have an account?{' '}
-          <Link to={`/signin?redirect=${redirect}`}>Sign-In</Link>
+          Já possuí uma conta?{' '}
+          <Link to={`/signin?redirect=${redirect}`}>Entrar</Link>
         </div>
       </Form>
      

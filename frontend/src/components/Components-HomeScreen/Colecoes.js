@@ -5,7 +5,7 @@ function Colecoes(){
         <>
         <div className="colecoes">
             <div className="colecao">
-                <h2>MEN</h2>
+                <h2>HOMEM</h2>
                 <img src="./images/man.webp"
                     title="Men Collection"
                     alt="Coeleção Verão"
@@ -14,7 +14,7 @@ function Colecoes(){
             </div>
 
             <div className="colecao">
-                <h2>WOMEN</h2>
+                <h2>MULHER</h2>
                 <img src="./images/women.jpg.opdownload"
                     title="Women Collection"
                     alt="Coeleção ROCK"

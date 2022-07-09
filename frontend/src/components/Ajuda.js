@@ -1,3 +1,6 @@
+import Form from   'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button';
+
 import './Ajuda.css'
 
 function Ajuda(){
@@ -7,10 +10,24 @@ function Ajuda(){
                 
             <div id="forms">
                 <div id="borda">
-                    Nome: <br/>
-                    <input type="text" name="Nome" /> <br/>
-                    Email para Contato: <br/>
-                    <input type="email" name="Email para Contato" /> <br/>
+                    
+                    <Form>
+                        <Form.Group controlId='nome' >
+                            <Form.Label >Nome</Form.Label>
+                            <Form.Control
+                                required
+                            />
+                        </Form.Group>
+                        
+                        <Form.Group controlId='email' >
+                            <Form.Label >Email</Form.Label>
+                            <Form.Control
+                                type="email"
+                                required
+                            />
+                        </Form.Group>
+                    </Form>
+                    <br/>
                     <select>
                         <option>Motivo do Contato</option>
                         <option>Problema com Pagamento</option>
@@ -24,7 +41,7 @@ function Ajuda(){
             </div>
             
             <div id="submit">
-                <button >Enviar</button>
+                <Button type="submit">Enviar</Button>
             </div>
             
         </section>

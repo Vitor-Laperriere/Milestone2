@@ -9,10 +9,10 @@ function FootBar(){
             <div id="Footer">
                 <div id="bot_foot">
                     <div className="container">
-                        <Link to="/shipping" className="foot-link">SHIPPING POLICY</Link>
-                        <Link to="/refund" className="foot-link">REFUND POLICY</Link>
-                        <Link to="/about_us" className="foot-link">ABOUT US</Link>
-                        <Link to="/help" className="foot-link">HELP</Link>
+                        <Link to="/shipping" className="foot-link">POLÍTICA DE ENVIO</Link>
+                        <Link to="/refund" className="foot-link">POLÍTICA DE REEMBOLSO</Link>
+                        <Link to="/about_us" className="foot-link">SOBRE NÓS</Link>
+                        <Link to="/help" className="foot-link">AJUDA</Link>
                     </div>
                 </div>
             </div>

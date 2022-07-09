@@ -85,12 +85,12 @@ export default function ProductListScreen() {
     <div>
       <Row>
         <Col>
-          <h1>Products</h1>
+          <h1>Produtos</h1>
         </Col>
         <Col className="col text-end">
           <div>
             <Button type="button" onClick={createHandler}>
-              Create Product
+              Criar produto
             </Button>
           </div>
         </Col>
@@ -106,11 +106,11 @@ export default function ProductListScreen() {
             <thead>
               <tr>
                 <th>ID</th>
-                <th>NAME</th>
-                <th>PRICE</th>
-                <th>CATEGORY</th>
-                <th>BRAND</th>
-                <th>ACTIONS</th>
+                <th>NOME</th>
+                <th>PREÇO</th>
+                <th>CATEGORIA</th>
+                <th>MARCA</th>
+                <th>OPÇÕES</th>
               </tr>
             </thead>
             <tbody>
@@ -127,7 +127,7 @@ export default function ProductListScreen() {
                       variant="light"
                       onClick={() => navigate(`/admin/product/${product._id}`)}
                     >
-                      Edit
+                      Editar
                     </Button>
                   </td>
                 </tr>

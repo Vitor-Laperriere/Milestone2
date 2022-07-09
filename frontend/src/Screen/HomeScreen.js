@@ -8,11 +8,11 @@ function HomeScreen() {
   return (
     <>
       <Helmet>
-        <title>Home</title>
+        <title>Ínicio</title>
       </Helmet>
       <BannerHome />
       <div id="titulo">
-        <h3>COLLECTION LIST</h3>
+        <h3>Lista de Coleções</h3>
       </div>
       <Colecoes />
     </>

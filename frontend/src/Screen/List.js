@@ -45,15 +45,15 @@ function List(){
 
 
     return(
-        loading? <div>Loading...</div>
+        loading? <div>Carregando...</div>
             :error? <div>{error}</div> :
 
              <div>
       <Helmet>
-        <title>Watch</title>
+        <title>Relógios</title>
       </Helmet>
                  <div class="padrao">
-                     <h1>Featured Products</h1>
+                     <h1>Produtos</h1>
                  </div>
       <div className="products">
         {loading ? (

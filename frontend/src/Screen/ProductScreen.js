@@ -11,6 +11,8 @@ import Button from 'react-bootstrap/Button';
 import Rating from '../components/Rating';
 import { Helmet } from 'react-helmet-async';
 
+import './util.css'
+
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':
@@ -66,7 +68,7 @@ function ProductScreen() {
   };
   
   return loading ? (
-    <div>Loading...</div>
+    <div>Carregando...</div>
   ) : error ? (
     <div>{error}</div>
   ) : (
@@ -79,6 +81,7 @@ function ProductScreen() {
     alt={product.name}
     />
         </Col>
+      <div className="descricao">
         <Col md={3}>
           <ListGroup variant="flush">
             <ListGroup.Item>
@@ -89,25 +92,25 @@ function ProductScreen() {
             </ListGroup.Item>
             <ListGroup.Item>
               <Rating
-    rating={product.rating}
-    numReviews={product.numReviews}
-    />
+                rating={product.rating}
+                numReviews={product.numReviews}
+                />
             </ListGroup.Item>
-            <ListGroup.Item>Price : ${product.price}</ListGroup.Item>
+            <ListGroup.Item>Preço : R${product.price}</ListGroup.Item>
             <ListGroup.Item>
-              Description:
+              Descrição:
               <p>{product.description}</p>
             </ListGroup.Item>
           </ListGroup>
         </Col>
         <Col md={3}>
-          <Card>
+
             <Card.Body>
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <Row>
-                    <Col>Price:</Col>
-                    <Col>${product.price}</Col>
+                    <Col>Preço:</Col>
+                    <Col>R${product.price}</Col>
                   </Row>
                 </ListGroup.Item>
                 <ListGroup.Item>
@@ -115,9 +118,9 @@ function ProductScreen() {
                     <Col>Status:</Col>
                     <Col>
                       {product.countInStock > 0 ? (
-                        <Badge bg="success">In Stock</Badge>
+                        <Badge bg="success">Em Estoque</Badge>
                       ) : (
-                        <Badge bg="danger">Unavailable</Badge>
+                        <Badge bg="danger">Indisponível</Badge>
                       )}
                     </Col>
                   </Row>
@@ -127,16 +130,17 @@ function ProductScreen() {
                   <ListGroup.Item>
                     <div className="d-grid">
                       <Button onClick={addToCartHandler} variant="primary">
-                        Add to Cart
+                        Adicionar ao carrinho
                       </Button>
                     </div>
                   </ListGroup.Item>
                 )}
               </ListGroup>
             </Card.Body>
-          </Card>
+
         </Col>
-      </Row> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+       </div>
+      </Row> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
   );
 }

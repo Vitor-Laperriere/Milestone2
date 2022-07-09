@@ -39,7 +39,7 @@ function ToolBar() {
             width="52"
             height="51"
           />
-          <p>WATCHES</p>
+          <p>RELÓGIOS</p>
         </Link>
 
         <Link to={'/cart'} className="tool-link">
@@ -50,7 +50,7 @@ function ToolBar() {
             widht="51"
             height="51"
           />
-          {'\n'}CART
+          {'\n'}CARRINHO
           {cart.cartItems.length > 0 && (
             <Badge pill bg="danger">
               {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
@@ -64,10 +64,10 @@ function ToolBar() {
             className="tool-link"
           >
             <LinkContainer to="/profile">
-              <NavDropdown.Item>User Profile</NavDropdown.Item>
+              <NavDropdown.Item>Perfil</NavDropdown.Item>
             </LinkContainer>
             <LinkContainer to="/orderhistory">
-              <NavDropdown.Item>Order History</NavDropdown.Item>
+              <NavDropdown.Item>Minhas compras</NavDropdown.Item>
             </LinkContainer>
             <NavDropdown.Divider />
 
@@ -79,7 +79,7 @@ function ToolBar() {
                 width="38"
                 height="38"
               />
-              <p>Sign Out</p>
+              <p>Sair</p>
             </Link>
           </NavDropdown>
         ) : (
@@ -105,13 +105,13 @@ function ToolBar() {
                 <NavDropdown.Item>Dashboard</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/admin/products">
-                <NavDropdown.Item>Products</NavDropdown.Item>
+                <NavDropdown.Item>Produtos</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/admin/orders">
-                <NavDropdown.Item>Orders</NavDropdown.Item>
+                <NavDropdown.Item>Pedidos</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/admin/users">
-                <NavDropdown.Item>Users</NavDropdown.Item>
+                <NavDropdown.Item>Usuários</NavDropdown.Item>
               </LinkContainer>
             </NavDropdown>
           )}

@@ -5,7 +5,7 @@ function RefundPolicy(){
         <section id="container">
             
         <div id="NomePagina">
-            <h1>Refund Policy</h1>
+            <h1>Política de Reembolso</h1>
         </div> 
 
         <div class="desc_refund">
