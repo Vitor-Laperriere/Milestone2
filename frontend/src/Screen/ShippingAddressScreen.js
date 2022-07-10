@@ -60,7 +60,7 @@ export default function ShippingAdressScreen() {
         <div id='ShipEnd'>
             <div className='small-container'>
                 <div class="padrao">
-                    <h1 className='my-3'>SEndereço de entrega</h1>
+                    <h1 className='my-3'>Endereço de entrega</h1>
                 </div>
                 <Form onSubmit={submitHandler}>
                     <Form.Group className='mb-3' controlId='fullName' >
