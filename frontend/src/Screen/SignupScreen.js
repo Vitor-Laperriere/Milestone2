@@ -49,8 +49,8 @@ export default function SignupScreen() {
   }, [navigate, redirect, userInfo]);
 
   return (
-    <div className="dados">
-    <Container className="small-container2">
+    <div >
+    <Container >
       <Helmet>
         <title>Registrar</title>
       </Helmet>
