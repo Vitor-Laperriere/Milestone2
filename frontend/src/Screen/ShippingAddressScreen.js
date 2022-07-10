@@ -111,7 +111,7 @@ export default function ShippingAdressScreen() {
                 </Form>
             </div>
         </div>
-    <br/><br/><br/><br/><br/>
+ 
     </div>
 
 }

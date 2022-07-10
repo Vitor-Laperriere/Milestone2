@@ -64,7 +64,7 @@ export default function PaymentMethodScreen() {
           </div>
         </Form>
       </div>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+   
     </div>
   );
 }

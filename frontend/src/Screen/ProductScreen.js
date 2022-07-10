@@ -140,7 +140,7 @@ function ProductScreen() {
 
         </Col>
        </div>
-      </Row> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      </Row> 
     </div>
   );
 }

@@ -130,24 +130,7 @@ export default function CartScreen() {
           </Card>
         </Col>
       </Row>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+     
     </div>
   );
 }

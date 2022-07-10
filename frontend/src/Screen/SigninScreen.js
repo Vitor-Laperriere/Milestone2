@@ -77,7 +77,7 @@ export default function SigninScreen() {
           </div>
         </Form>
       </div>
-      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+     
     </div>
   );
 }
