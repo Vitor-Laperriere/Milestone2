@@ -6,11 +6,11 @@
 }
 
 #padrinho{
-    color: white;
+    color: #000000;
 }
 
 #padrinho.table{
-    color: white;
+    color: #000000;
     min-height: 700px;
 }
 
@@ -20,13 +20,13 @@
 }
 
 .padrao h1{
-    color: white;
+    color: #000000;
     font-weight: bold;
     margin: 15px;
 }
 
 .padrao h2{
-    color: white;
+    color: #000000;
     font-weight: bold;
     margin: 15px;
 }

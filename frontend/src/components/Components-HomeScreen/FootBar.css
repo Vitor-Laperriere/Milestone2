@@ -5,9 +5,8 @@
     align-items: center;
     text-decoration: None;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    position: absolute;
-    margin-bottom: 0;
+    justify-content: space-evenly;
+    bottom: 0;
     width: 100%;
     text-align: center;
     left: 0;

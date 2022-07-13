@@ -29,6 +29,9 @@ import OrderListScreen from './Screen/OrderListScreen';
 import ProductListScreen from './Screen/ProductListScreen';
 import ProductEditScreen from './Screen/ProductEditScreen';
 import UserEditScreen from './Screen/UserEditScreen';
+import HomemCollection from './Screen/HomemCollection';
+import MulherCollection from './Screen/MulherCollection';
+import SmartwatchCollection from './Screen/SmartwatchCollection';
 
 function App() {
   return (
@@ -38,11 +41,14 @@ function App() {
 
         <header>
           <ToolBar />
-          <main>
+          <main class="meiola">
             <Routes>
               <Route path="/product/:slug" element={<ProductScreen />} />
               <Route path="/list" element={<List />} />
               <Route path="/cart" element={<CartScreen />} />
+                <Route path="/homemcollection" element={<HomemCollection />} />
+              <Route path="/mulhercollection" element={<MulherCollection />} />
+              <Route path="/smarwatchcollection" element={<SmartwatchCollection />} />
               <Route path="/signin" element={<SigninScreen />} />
               <Route path="/signup" element={<SignupScreen />} />
               <Route path="/profile" element={<ProfileScreen />} />

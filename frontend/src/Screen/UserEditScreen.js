@@ -141,7 +141,8 @@ export default function UserEditScreen() {
       )}
     
     </Container>
-    
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
     </div>
   );
 }
