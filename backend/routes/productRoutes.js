@@ -56,7 +56,20 @@ productRouter.put(
   })
 );
 
-
+productRouter.delete(
+  '/:id',
+  isAuth,
+  isAdmin,
+  expressAsyncHandler(async (req, res) => {
+    const product = await Product.findById(req.params.id);
+    if (product) {
+      await product.remove();
+      res.send({ message: 'Product Deleted' });
+    } else {
+      res.status(404).send({ message: 'Product Not Found' });
+    }
+  })
+);
 
 productRouter.get(
   '/admin',
@@ -65,7 +78,7 @@ productRouter.get(
   expressAsyncHandler(async (req, res) => {
     const { query } = req;
     const page = query.page || 1;
-    const pageSize = query.pageSize || PAGE_SIZE;
+    const pageSize = query.pageSize;
 
     const products = await Product.find()
       .skip(pageSize * (page - 1))
