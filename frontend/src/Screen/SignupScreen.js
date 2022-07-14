@@ -97,7 +97,7 @@ export default function SignupScreen() {
       </Form>
      
     </Container>
-    
+    <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br /><br /> <br /> <br /> <br />
     </div>
   );
 }
