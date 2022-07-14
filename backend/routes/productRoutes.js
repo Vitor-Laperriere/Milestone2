@@ -18,7 +18,7 @@ productRouter.post(
     const newProduct = new Product({
       name: 'sample name ' + Date.now(),
       slug: 'sample-name-' + Date.now(),
-      fotinha: '/images/p1.jpg',
+      fotinha: 'https://res.cloudinary.com/dbbgwz38q/image/upload/',
       price: 0,
       category: 'sample category',
       brand: 'sample brand',
@@ -43,7 +43,7 @@ productRouter.put(
       product.name = req.body.name;
       product.slug = req.body.slug;
       product.price = req.body.price;
-      product.image = req.body.image;
+      product.fotinha = req.body.fotinha;
       product.category = req.body.category;
       product.brand = req.body.brand;
       product.countInStock = req.body.countInStock;

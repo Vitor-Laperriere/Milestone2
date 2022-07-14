@@ -55,7 +55,7 @@ export default function ProductEditScreen() {
   const [name, setName] = useState('');
   const [slug, setSlug] = useState('');
   const [price, setPrice] = useState('');
-  const [image, setImage] = useState('');
+  const [fotinha, setImage] = useState('');
   const [category, setCategory] = useState('');
   const [countInStock, setCountInStock] = useState('');
   const [brand, setBrand] = useState('');
@@ -69,7 +69,7 @@ export default function ProductEditScreen() {
         setName(data.name);
         setSlug(data.slug);
         setPrice(data.price);
-        setImage(data.image);
+        setImage(data.fotinha);
         setCategory(data.category);
         setCountInStock(data.countInStock);
         setBrand(data.brand);
@@ -95,7 +95,7 @@ export default function ProductEditScreen() {
           name,
           slug,
           price,
-          image,
+          fotinha,
           category,
           brand,
           countInStock,
@@ -180,7 +180,7 @@ export default function ProductEditScreen() {
           <Form.Group className="mb-3" controlId="image">
             <Form.Label>Image File</Form.Label>
             <Form.Control
-              value={image}
+              value={fotinha}
               onChange={(e) => setImage(e.target.value)}
               required
             />
