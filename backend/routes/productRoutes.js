@@ -38,7 +38,7 @@ productRouter.put(
   isAdmin,
   expressAsyncHandler(async (req, res) => {
     const productId = req.params.id;
-    const product = await Product.findById(productId);
+    const product = await Product.findById(req.params.id);
     if (product) {
       product.name = req.body.name;
       product.slug = req.body.slug;
@@ -70,6 +70,7 @@ productRouter.delete(
     }
   })
 );
+const PAGE_SIZE = 10;
 
 productRouter.get(
   '/admin',
@@ -78,7 +79,7 @@ productRouter.get(
   expressAsyncHandler(async (req, res) => {
     const { query } = req;
     const page = query.page || 1;
-    const pageSize = query.pageSize;
+    const pageSize = query.pageSize || PAGE_SIZE;
 
     const products = await Product.find()
       .skip(pageSize * (page - 1))

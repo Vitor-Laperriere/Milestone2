@@ -139,7 +139,7 @@ export default function ProductEditScreen() {
   };
 
   return (
-    <Container className="small-container">
+    <div >
       <Helmet>
         <title>Edit Product ${productId}</title>
       </Helmet>
@@ -150,6 +150,8 @@ export default function ProductEditScreen() {
       ) : error ? (
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
+        <Container>
+
         <Form onSubmit={submitHandler}>
           <Form.Group className="mb-3" controlId="name">
             <Form.Label>Name</Form.Label>
@@ -227,7 +229,9 @@ export default function ProductEditScreen() {
             {loadingUpdate && <LoadingBox></LoadingBox>}
           </div>
         </Form>
+        </Container>
       )}
-    </Container>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
   );
 }

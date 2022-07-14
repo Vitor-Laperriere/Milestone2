@@ -107,7 +107,7 @@ export default function ProductListScreen() {
         );
         toast.success('product created successfully');
         dispatch({ type: 'CREATE_SUCCESS' });
-        navigate(`/admin/product/${data.product._id}`);
+        navigate(`/admin/products/${data.product._id}`);
       } catch (err) {
         toast.error(getError(error));
         dispatch({
@@ -180,7 +180,7 @@ export default function ProductListScreen() {
                     <Button
                       type="button"
                       variant="light"
-                      onClick={() => navigate(`/admin/product/${product._id}`)}
+                      onClick={() => navigate(`/admin/products/${product._id}`)}
                     >
                       Edit
                     </Button>
