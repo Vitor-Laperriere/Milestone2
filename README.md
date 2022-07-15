@@ -18,11 +18,11 @@ Como relatado anteriormente, a parte do backend foi adiantada na segunda entrega
 As funcionalidades de adiministrador que foram adicionadas são
 - Alterar usuários e torná-los adiministradores
 - Remover um produto
-- Editar um produto ****
-- Adicionar um produto ****
+- Editar um produto
+- Adicionar um produto
 - Nossa funcionalidade especial, utilizando a API do google, uma páginda de Dashboard com estatísticas de vendas, organizadas por data e categoria.
 
-** ****Na página inicial, o banner temporário foi substituido e agora os links para as coleções funcionam e filtram os produtos pela categoria.
+Na página inicial, o banner temporário foi substituido e agora os links para as coleções funcionam e filtram os produtos pela categoria.
 
 ### Comments About The Code
 No comments.
