@@ -18,11 +18,11 @@ Como relatado anteriormente, a parte do backend foi adiantada na segunda entrega
 As funcionalidades de adiministrador que foram adicionadas são
 - Alterar usuários e torná-los adiministradores
 - Remover um produto
-- Editar um produto ****
-- Adicionar um produto ****
+- Editar um produto
+- Adicionar um produto
 - Nossa funcionalidade especial, utilizando a API do google, uma páginda de Dashboard com estatísticas de vendas, organizadas por data e categoria.
 
-** ****Na página inicial, o banner temporário foi substituido e agora os links para as coleções funcionam e filtram os produtos pela categoria.
+Na página inicial, o banner temporário foi substituido e agora os links para as coleções funcionam e filtram os produtos pela categoria.
 
 ### Comments About The Code
 No comments.
@@ -77,9 +77,12 @@ Após clonar o repositório, mude o diretório para a pasta do Backend e use os 
       
 Crie uma pasta chamada .env e adicione:
 
-JWT_SECRET=segredinho
-
-MONGODB_URI=mongodb+srv://jjonhy:123coxinha@cluster0.tyj9ulu.mongodb.net/jjonhy?retryWrites=true&w=majority
+    JWT_SECRET=segredinho
+    MONGODB_URI=mongodb+srv://jjonhy:123coxinha@cluster0.tyj9ulu.mongodb.net/jjonhy?retryWrites=true&w=majority
+    CLOUDINARY_CLOUD_NAME=dbbgwz38q
+    CLOUDINARY_API_KEY=636132718298815
+    CLOUDINARY_URL=cloudinary://636132718298815:MhXH9Z6CrDAmJBjrNn5AMnEspYI@dbbgwz38q
+    CLOUDINARY_API_SECRET=MhXH9Z6CrDAmJBjrNn5AMnEspYI
 
 Abra outro terminal, va para o diretório do Frontend e use:
 
