@@ -77,9 +77,12 @@ Após clonar o repositório, mude o diretório para a pasta do Backend e use os 
       
 Crie uma pasta chamada .env e adicione:
 
-JWT_SECRET=segredinho
-
-MONGODB_URI=mongodb+srv://jjonhy:123coxinha@cluster0.tyj9ulu.mongodb.net/jjonhy?retryWrites=true&w=majority
+    JWT_SECRET=segredinho
+    MONGODB_URI=mongodb+srv://jjonhy:123coxinha@cluster0.tyj9ulu.mongodb.net/jjonhy?retryWrites=true&w=majority
+    CLOUDINARY_CLOUD_NAME=dbbgwz38q
+    CLOUDINARY_API_KEY=636132718298815
+    CLOUDINARY_URL=cloudinary://636132718298815:MhXH9Z6CrDAmJBjrNn5AMnEspYI@dbbgwz38q
+    CLOUDINARY_API_SECRET=MhXH9Z6CrDAmJBjrNn5AMnEspYI
 
 Abra outro terminal, va para o diretório do Frontend e use:
 
