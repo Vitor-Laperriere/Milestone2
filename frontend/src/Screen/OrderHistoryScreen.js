@@ -100,6 +100,8 @@ export default function OrderHistoryScreen() {
           </tbody>
         </table>
       )}
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
+
   );
 }
